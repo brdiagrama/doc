@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.6">
+  <diagram name="Página-1" id="SncfivqVUeE-dps2Hlf5">
+    <mxGraphModel dx="1426" dy="743" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4xTv5zjPV70BS23HVWoZ-1" parent="1" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#040304;" value="" vertex="1">
+          <mxGeometry height="206" width="770" x="440" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="4xTv5zjPV70BS23HVWoZ-2" edge="1" parent="1" source="4xTv5zjPV70BS23HVWoZ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" target="4xTv5zjPV70BS23HVWoZ-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4xTv5zjPV70BS23HVWoZ-3" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#FFF2CC;strokeColor=#000000;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&amp;lt;&amp;lt;Service&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;SqlValidator&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ RESERVED_WORDS: Set&amp;lt;String&amp;gt;&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ VALID_TYPES: Set&amp;lt;String&amp;gt;&lt;/u&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ validate(sql): ValidationResult&lt;br&gt;+ validateCreateTable(stmt, lines): TableValidation&lt;br&gt;+ parseTableBody(body, tableName): BodyParseResult&lt;br&gt;+ extractCreateStatements(sql): Array&amp;lt;String&amp;gt;&lt;br&gt;+ findLineNumber(snippet, lines): Number&lt;br&gt;+ findClosestType(invalidType): String | null&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ removeComments(sql: String): String&lt;/u&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="204" width="410" x="789" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="4xTv5zjPV70BS23HVWoZ-4" parent="1" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#040304;" value="Service" vertex="1">
+          <mxGeometry height="50" width="410" x="789" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="4xTv5zjPV70BS23HVWoZ-5" parent="1" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#040304;" value="Model" vertex="1">
+          <mxGeometry height="50" width="770" x="440" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="4xTv5zjPV70BS23HVWoZ-6" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#000000;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&amp;lt;&amp;lt;Service&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;SqlParserService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ parse(sql): DiagramData&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ detectCardinality(fkData, tableData): String&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ calculateOffsets(relationships): Array&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ isJunctionTable(tableData): Boolean&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ isInheritanceRelationship(tableData, fkColumn, refTableName, newTables): Boolean&lt;/u&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="156" width="467" x="440" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="4xTv5zjPV70BS23HVWoZ-7" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#000000;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&amp;lt;&amp;lt;External Library&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Parser&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ astify(sql): Object AST&lt;/p&gt;" vertex="1">
+          <mxGeometry height="96" width="160" x="1050" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="4xTv5zjPV70BS23HVWoZ-12" parent="1" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#040304;" value="Controller" vertex="1">
+          <mxGeometry height="50" width="590" x="60" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="4xTv5zjPV70BS23HVWoZ-13" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#000000;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&amp;lt;&amp;lt;Controller&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DiagramController&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ STORAGE_KEYS: Object { LAST_SQL, LAST_DIAGRAM, LAST POSITIONS, USER_PREFERENCES)&lt;/u&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;u&gt;+ processSql(sql): ProcessResult&lt;br&gt;+ saveToCache(sql, data): void&lt;br&gt;+ loadLastDiagram(): DiagramData | null&lt;br&gt;+ loadLastSql(): String | null&lt;br&gt;+ saveTablePositions(tables): void&lt;br&gt;+ restoreTablePositions(diagramData): DiagramData&lt;br&gt;+ getStatistics(data): Statistics| null&lt;br&gt;+ clearCache(): void&lt;/u&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="196" width="590" x="60" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="4xTv5zjPV70BS23HVWoZ-16" edge="1" parent="1" source="4xTv5zjPV70BS23HVWoZ-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.002;entryY=0.393;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;entryPerimeter=0;exitX=0.434;exitY=1.01;exitDx=0;exitDy=0;exitPerimeter=0;" target="4xTv5zjPV70BS23HVWoZ-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="370" as="sourcePoint" />
+            <mxPoint x="393" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4xTv5zjPV70BS23HVWoZ-17" edge="1" parent="1" source="4xTv5zjPV70BS23HVWoZ-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;exitX=1.005;exitY=0.525;exitDx=0;exitDy=0;exitPerimeter=0;" target="4xTv5zjPV70BS23HVWoZ-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="440" as="sourcePoint" />
+            <mxPoint x="363" y="577" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4xTv5zjPV70BS23HVWoZ-32" parent="1" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;fillColor=#FFF8E4;" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&amp;lt;&amp;lt;Data Transfer Object&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;ProcessResult&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ success: Boolean&lt;br&gt;+ errors: Array&amp;lt;Error&amp;gt;&lt;br&gt;+ warnings: Array&amp;lt;Warning&amp;gt;&lt;br&gt;+ data: DiagramData | null&amp;nbsp;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="115" width="220" x="60" y="321" as="geometry" />
+        </mxCell>
+        <mxCell id="4xTv5zjPV70BS23HVWoZ-34" parent="1" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;fillColor=#FFF8E4;" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&amp;lt;&amp;lt;Data Transfer Object&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;DiagramData&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ tables: Object JSON&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ relationships: Array&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="220" x="60" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="4xTv5zjPV70BS23HVWoZ-36" parent="1" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;fillColor=#FFF8E4;" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&amp;lt;&amp;lt;Data Transfer Object&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;ValidationResult&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ isValid: Boolean&lt;br&gt;+ tables: Object JSON&lt;br&gt;+ errors: Array&amp;lt;Error&amp;gt;&lt;br&gt;+ warnings: Array&amp;lt;Warning&amp;gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="220" x="60" y="565" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
