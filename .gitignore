@@ -1,0 +1,16 @@
+# Arquivos temporários
+~$*
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Backups
+*.bak
+*~
+
+# Arquivos do sistema
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
